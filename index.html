@@ -116,8 +116,28 @@
 
     /* Hero Section */
     .hero {
-      padding: 90px 0 70px;
+      padding: 70px 0 60px;
       text-align: center;
+    }
+
+    .hero-avatar-wrapper {
+      margin-bottom: 24px;
+      display: inline-block;
+      position: relative;
+    }
+
+    .hero-avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--border);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), 0 0 25px rgba(0, 112, 243, 0.25);
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .hero-avatar:hover {
+      transform: scale(1.04);
+      border-color: var(--cyan);
     }
 
     .status-badge {
@@ -550,6 +570,9 @@
 
     <!-- Hero -->
     <header class="hero">
+      <div class="hero-avatar-wrapper">
+        <img src="./avatar.jpg" alt="Juan Ignacio Quindt" class="hero-avatar">
+      </div>
       <div class="status-badge">
         <div class="status-dot"></div>
         Disponible para nuevos desafíos profesionales
